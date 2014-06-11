@@ -14,6 +14,17 @@ angular.module('starter.services', [])
     },
     get: function(bookId) {
       return books[bookId - 1];
+    },
+    put: function(title, isbn) {
+      books.push({
+        title: title, 
+        isbn: isbn, 
+        image_name: "placeholder.jpg", 
+        id: books.length + 1
+      });
+    },
+    delete: function(bookId) {
+      books.splice(bookId - 1, 1);
     }
   }
 
