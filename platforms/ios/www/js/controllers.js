@@ -28,7 +28,7 @@ angular.module('starter.controllers', [])
     $.getJSON( queryString )
       .done( function( json ) {
         if (json.items) {
-          Books.put(json.items[0].volumeInfo.title, resultArray[0]);
+          Books.put(json.items[0].volumeInfo.title, resultArray[0], json.items[0].volumeInfo.description);
           $scope.$apply();
         } else {
           alert("Book not found");
