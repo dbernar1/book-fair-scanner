@@ -22,6 +22,9 @@ angular.module('starter.services', [])
         image_name: "placeholder.jpg", 
         id: books.length + 1
       });
+    },
+    delete: function(bookId) {
+      books.splice(bookId - 1, 1);
     }
   }
 

@@ -19,24 +19,15 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <feature name="Keyboard">
-        <param name="ios-package" onload="true" value="IonicKeyboard" />
-    </feature>
-    <feature name="Console">
-        <param name="ios-package" value="CDVLogger" />
-    </feature>
-    <feature name="Device">
-        <param name="ios-package" value="CDVDevice" />
-    </feature>
     <feature name="ScanditSDK">
         <param name="ios-package" value="ScanditSDK" />
     </feature>
-    <name>Blank</name>
+    <name>Book Fair Scanner</name>
     <description>
-        An Ionic Framework and Cordova project.
+        Add books to cart via barcode scanner.
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="jeffrey.fulton@me.com" href="http://jeffreyfulton.ca/">
+        Jeffrey Fulton
     </author>
     <content src="index.html" />
     <access origin="*" />

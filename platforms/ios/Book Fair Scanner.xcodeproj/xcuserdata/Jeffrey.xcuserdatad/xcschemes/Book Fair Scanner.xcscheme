@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-               BuildableName = "Blank.app"
-               BlueprintName = "Blank"
-               ReferencedContainer = "container:Blank.xcodeproj">
+               BuildableName = "Book Fair Scanner.app"
+               BlueprintName = "Book Fair Scanner"
+               ReferencedContainer = "container:Book Fair Scanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "Blank.app"
-            BlueprintName = "Blank"
-            ReferencedContainer = "container:Blank.xcodeproj">
+            BuildableName = "Book Fair Scanner.app"
+            BlueprintName = "Book Fair Scanner"
+            ReferencedContainer = "container:Book Fair Scanner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "Blank.app"
-            BlueprintName = "Blank"
-            ReferencedContainer = "container:Blank.xcodeproj">
+            BuildableName = "Book Fair Scanner.app"
+            BlueprintName = "Book Fair Scanner"
+            ReferencedContainer = "container:Book Fair Scanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "Blank.app"
-            BlueprintName = "Blank"
-            ReferencedContainer = "container:Blank.xcodeproj">
+            BuildableName = "Book Fair Scanner.app"
+            BlueprintName = "Book Fair Scanner"
+            ReferencedContainer = "container:Book Fair Scanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

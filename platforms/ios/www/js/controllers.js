@@ -4,6 +4,12 @@ angular.module('starter.controllers', [])
 
 })
 
+.controller('CartListCtrl', function($scope, $ionicListDelegate, Books) {
+  $scope.delete = function(bookId) {
+    Books.delete(bookId);
+  }
+})
+
 .controller('ScannerCtrl', function($scope, Books) {
   $scope.scan = function() {
     cordova.exec($scope.success, $scope.failure,
