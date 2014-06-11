@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EE1EC2D4-B7E2-4F19-9533-381DCB36E934</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Book Fair Scanner</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5A475D17-087D-4A22-BD09-5CE3AA0DD09F</key>
+		<string>ssh://github.com/jeffreyfultonca/book-fair-scanner.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/Book Fair Scanner.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5A475D17-087D-4A22-BD09-5CE3AA0DD09F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/jeffreyfultonca/book-fair-scanner.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5A475D17-087D-4A22-BD09-5CE3AA0DD09F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5A475D17-087D-4A22-BD09-5CE3AA0DD09F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>book-fair-scanner</string>
+		</dict>
+	</array>
+</dict>
+</plist>

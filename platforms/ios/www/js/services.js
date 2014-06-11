@@ -31,16 +31,32 @@ angular.module('starter.services', [])
       return books[bookId - 1];
     },
     put: function(title, isbn, description) {
+
+      // Find max id 
+      var max = 0;
+
+      for ( i = 0; i < books.length; i++) {
+        if (books[i]['id'] > max) {
+          max = books[i]['id'];
+        }
+      }
+
       books.push({
         title: title, 
         isbn: isbn, 
         description: description,
         image_name: "placeholder.jpg", 
-        id: books.length + 1
+        id: max + 1
       });
     },
     delete: function(bookId) {
-      books.splice(bookId - 1, 1);
+
+      // Find book with matching id
+      for(i = 0; i < books.length; i++) {
+        if (books[i]['id'] == bookId) {
+          books.splice(i, 1);
+        }
+      }
     }
   }
 
