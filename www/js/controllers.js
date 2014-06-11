@@ -4,10 +4,11 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('CartCtrl', function($scope) {
-
+.controller('CartCtrl', function($scope, Books) {
+  $scope.books = Books.all();
 })
 
-.controller('CartCtrl', function($scope, $stateParams) {
-  
+.controller('BookDetailCtrl', function($scope, $stateParams, Books) {
+  $scope.book = Books.get($stateParams.bookId);
 })
+
