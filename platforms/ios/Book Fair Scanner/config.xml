@@ -19,9 +19,6 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <feature name="ScanditSDK">
-        <param name="ios-package" value="ScanditSDK" />
-    </feature>
     <name>Book Fair Scanner</name>
     <description>
         Add books to cart via barcode scanner.

@@ -12,13 +12,14 @@ angular.module('starter.controllers', [])
 
 .controller('ScannerCtrl', function($scope, Books) {
   $scope.scan = function() {
-    cordova.exec($scope.success, $scope.failure,
-      "ScanditSDK",
-      "scan",
-      ["4+bB9uzwEeOHZWshmH1PIWvu5htoGzlMxWvSTRbSOrI",
-      {"beep": true,
-       "1DScanning": true,
-       "2dScanning": true}]);
+    // cordova.exec($scope.success, $scope.failure,
+    //   "ScanditSDK",
+    //   "scan",
+    //   ["4+bB9uzwEeOHZWshmH1PIWvu5htoGzlMxWvSTRbSOrI",
+    //   {"beep": true,
+    //    "1DScanning": true,
+    //    "2dScanning": true,
+    //    "code128": true}]);
   };
 
   $scope.success = function(resultArray) {
