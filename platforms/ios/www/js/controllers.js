@@ -20,6 +20,22 @@ angular.module('starter.controllers', [])
     //    "1DScanning": true,
     //    "2dScanning": true,
     //    "code128": true}]);
+  
+    console.log("inside $scope.scan");
+
+    cordova.plugins.barcodeScanner.scan(
+      function (result) {
+
+        var s = "Result: " + result.text + "<br/>" +
+        "Format: " + result.format + "<br/>" +
+        "Cancelled: " + result.cancelled;
+        resultDiv.innerHTML = s;
+      }, 
+      function (error) {
+        alert("Scanning failed: " + error);
+      }
+    );
+
   };
 
   $scope.success = function(resultArray) {

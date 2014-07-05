@@ -8,25 +8,82 @@
             "framework": {
                 "parents": {
                     "AudioToolbox.framework": [],
-                    "AVFoundation.framework": [],
+                    "AVFoundation.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
                     "CoreGraphics.framework": [],
                     "CoreLocation.framework": [],
                     "CoreMedia.framework": [],
-                    "CoreVideo.framework": [],
-                    "QuartzCore.framework": [],
+                    "CoreVideo.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "QuartzCore.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
                     "SystemConfiguration.framework": [],
-                    "libiconv.dylib": [],
+                    "libiconv.dylib": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
                     "libz.dylib": [],
-                    "libc++.dylib": []
+                    "libc++.dylib": [],
+                    "AssetsLibrary.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ]
                 }
             },
             "config.xml": {
                 "parents": {
-                    "/widget": []
+                    "/widget": [],
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"ios-package\" onload=\"true\" value=\"IonicKeyboard\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
     },
-    "installed_plugins": {},
+    "installed_plugins": {
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        }
+    },
     "dependent_plugins": {}
 }
