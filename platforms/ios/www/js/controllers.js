@@ -10,28 +10,22 @@ angular.module('starter.controllers', [])
   }
 })
 
-.controller('ScannerCtrl', function($scope, Books) {
+.controller('ScannerCtrl', function($scope, Books, Library) {
   $scope.scan = function() {
     cordova.plugins.barcodeScanner.scan($scope.success, $scope.failure);
   };
 
   $scope.success = function(result) {
-    var isbn = result.text
+    var isbn = result.text;
 
-    var queryString = "https://www.googleapis.com/books/v1/volumes?q=isbn:" + isbn;
+    var book = Library.get(isbn);
 
-    $.getJSON( queryString )
-      .done( function( json ) {
-        if (json.items) {
-          Books.put(json.items[0].volumeInfo.title, isbn, json.items[0].volumeInfo.description);
-          $scope.$apply();
-        } else {
-          alert("Book not found");
-        }
-      })
-      .fail( function() {
-        alert("Problem retrieving book info");
-      });
+    if(book) {
+      Books.put(book["title"], book["sku"], book["description"]);
+      $scope.$apply();
+    } else {
+      alert("ISBN: " + isbn + " not found");
+    }
   };
 
   $scope.failure = function(error) {

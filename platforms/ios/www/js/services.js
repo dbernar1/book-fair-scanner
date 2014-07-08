@@ -1,5 +1,35 @@
 angular.module('starter.services', [])
 
+.factory('Library', function() {
+  return {
+    get: function(sku) {
+
+      var book;
+
+      $.ajaxSetup({
+        async: false
+      });
+
+      $.getJSON( "js/products.json", function( json ) {
+
+        var books = json["books"];
+
+        for(i = 0; i < books.length; i++){
+          if( books[i]["sku"] == sku ){
+            book = books[i];
+          }
+        }
+      });
+
+      $.ajaxSetup({
+        async: true
+      });
+
+      return book;
+    }
+  }
+})
+
 .factory('Books', function() {
 
   var books = [
